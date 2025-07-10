@@ -218,4 +218,28 @@ document.addEventListener('DOMContentLoaded', () => {
         // Uncomment the line below to enable typing effect
         // typeWriter(heroTitle, originalText, 150);
     }
+    
+    // Tab switching functionality
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const learnerSteps = document.getElementById('learners-steps');
+    const tutorSteps = document.getElementById('tutors-steps');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            // Show/hide appropriate steps
+            if (button.dataset.tab === 'learners') {
+                learnerSteps.classList.remove('hidden');
+                tutorSteps.classList.add('hidden');
+            } else {
+                learnerSteps.classList.add('hidden');
+                tutorSteps.classList.remove('hidden');
+            }
+        });
+    });
 });
+
