@@ -37,8 +37,8 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">Colunn</h1>
-                    <p class="hero-tagline">Your Gateway to Real IT Skills</p>
-                    <p class="hero-subheading">Structured courses, real-time practice, built-in support.</p>
+                    <p class="hero-tagline">Desktop-First IT Learning Platform</p>
+                    <p class="hero-subheading">Connect serious learners with expert tutors. Real skills, real tools, real results.</p>
                     <button class="hero-cta">Join Waitlist</button>
                 </div>
                 <div class="hero-visual">
@@ -64,27 +64,54 @@
     <section id="how-it-works" class="how-it-works">
         <div class="container">
             <h2 class="section-title">How It Works</h2>
-            <div class="steps">
+            <div class="audience-tabs">
+                <button class="tab-btn active" data-tab="learners">For Learners</button>
+                <button class="tab-btn" data-tab="tutors">For Tutors</button>
+            </div>
+            <div class="steps" id="learners-steps">
                 <div class="step" data-step="1">
-                    <div class="step-icon">
-                        <i class="fas fa-user-plus"></i>
-                    </div>
-                    <h3>Subscribe</h3>
-                    <p>Join our platform and choose your learning path</p>
-                </div>
-                <div class="step" data-step="2">
                     <div class="step-icon">
                         <i class="fas fa-download"></i>
                     </div>
-                    <h3>Download App</h3>
-                    <p>Get our desktop app for the best learning experience</p>
+                    <h3>Download Desktop App</h3>
+                    <p>Subscribe and get our desktop-first learning environment with dual-pane interface</p>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Learn with Real Tools</h3>
+                    <p>Course docs on left, live coding environment on right. AI chatbot for instant help</p>
                 </div>
                 <div class="step" data-step="3">
                     <div class="step-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                        <i class="fas fa-certificate"></i>
                     </div>
-                    <h3>Start Learning</h3>
-                    <p>Begin your journey with hands-on projects and real-time support</p>
+                    <h3>Build Your Portfolio</h3>
+                    <p>Complete projects, earn certificates, showcase your work on GitHub</p>
+                </div>
+            </div>
+            <div class="steps hidden" id="tutors-steps">
+                <div class="step" data-step="1">
+                    <div class="step-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>Get Verified</h3>
+                    <p>Pass our interview process to become a verified expert tutor</p>
+                </div>
+                <div class="step" data-step="2">
+                    <div class="step-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Choose Your Mode</h3>
+                    <p>Offer one-on-one sessions or create public workshops and bootcamps</p>
+                </div>
+                <div class="step" data-step="3">
+                    <div class="step-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Earn & Grow</h3>
+                    <p>Revenue-sharing model with bonus incentives for quality teaching</p>
                 </div>
             </div>
         </div>
@@ -97,31 +124,31 @@
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-columns"></i>
                     </div>
-                    <h3>Interactive IDE</h3>
-                    <p>Code directly in your browser with our powerful, feature-rich IDE that supports multiple programming languages.</p>
+                    <h3>Dual-Pane Interface</h3>
+                    <p>Desktop app with course documentation on the left and live coding environment on the right for seamless learning.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Expert Tutors</h3>
+                    <p>Learn from verified professionals through one-on-one sessions or join public workshops and bootcamps.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-robot"></i>
                     </div>
-                    <h3>AI Teaching Assistant</h3>
-                    <p>Get instant help and personalized guidance from our AI-powered teaching assistant available 24/7.</p>
+                    <h3>AI-Powered Support</h3>
+                    <p>Real-time AI chatbot to solve doubts instantly while you learn, ensuring you never get stuck.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-laptop"></i>
+                        <i class="fas fa-github"></i>
                     </div>
-                    <h3>Offline Desktop App</h3>
-                    <p>Continue learning even without internet with our fully-featured offline desktop application.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3>Hands-on Projects</h3>
-                    <p>Build real-world projects that you can showcase in your portfolio and impress potential employers.</p>
+                    <h3>Portfolio Building</h3>
+                    <p>Complete guided projects that automatically build your public GitHub portfolio and earn industry certificates.</p>
                 </div>
             </div>
         </div>
@@ -134,7 +161,7 @@
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"Colunn transformed my career! The hands-on approach and AI assistant made learning programming so much easier. I landed my first tech job within 3 months!"</p>
+                        <p>"The dual-pane interface is brilliant! Having course docs and coding environment side-by-side with AI support made learning so much more efficient. I landed my first tech job within 3 months!"</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
@@ -142,13 +169,13 @@
                         </div>
                         <div class="author-info">
                             <h4>Sarah Johnson</h4>
-                            <p>Full Stack Developer</p>
+                            <p>Learner → Full Stack Developer</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"The offline desktop app is a game-changer! I could continue learning during my commute and the projects helped me build an impressive portfolio."</p>
+                        <p>"As a tutor, Colunn's platform handles everything - scheduling, payments, notes sharing. I can focus on teaching while earning through both 1-on-1 sessions and workshops."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
@@ -156,13 +183,13 @@
                         </div>
                         <div class="author-info">
                             <h4>Mike Chen</h4>
-                            <p>Software Engineer</p>
+                            <p>Verified Tutor</p>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <p>"Best investment I've made! The structured courses and real-time practice environment made complex concepts easy to understand and apply."</p>
+                        <p>"The desktop-first approach with real tools sets Colunn apart. No more switching between browser tabs - everything I need for serious IT learning is in one place."</p>
                     </div>
                     <div class="testimonial-author">
                         <div class="author-avatar">
@@ -170,7 +197,7 @@
                         </div>
                         <div class="author-info">
                             <h4>Emily Rodriguez</h4>
-                            <p>Data Scientist</p>
+                            <p>Career Switcher → Data Scientist</p>
                         </div>
                     </div>
                 </div>
@@ -210,3 +237,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
